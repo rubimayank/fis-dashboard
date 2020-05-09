@@ -1,0 +1,19 @@
+#editor configuration http://editorconfig.org/
+
+root = true
+
+#for all the files
+[*]
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+#indent for all the files
+indent_size              = 2
+indent_style             = space
+
+#for all markdown file
+[*.md]
+indent_style             = space
+trim_trailing_whitespace = false
