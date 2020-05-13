@@ -270,7 +270,7 @@ function Customers({ userService }) {
                   onMouseMove={() => updateFocused({ type: 'change', index })}
                   onClick={() => onSelect(suggestions[index])}
                 >
-                  {`${result.item.firstName} ${result.item.lastName}`}
+                  {`${result.item.firstName} ${result.item.lastName} - ${result.item.cid}`}
                 </Suggestion>
               )) : (
                 <Suggestion>
@@ -287,7 +287,7 @@ function Customers({ userService }) {
           onClick={() => {
             resetTerms();
             setSearchSelection(null);
-            setSuggestions(null);
+            setSuggestions([]);
           }}
         >
           Cancel
